@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      #body {
+        font-family: "Outfit", sans-serif;
+        background-color: hsl(216, 50%, 16%);
+        margin: 0;
+      }
+      #outer-container {
+        width: 24rem;
+        background-color: hsl(219, 54%, 14%);
+        margin: auto;
+        padding: 1rem 1rem 2rem;
+        border-radius: 3.5rem;
+      }
+      #middle-container {
+        width: 21.5rem;
+        background-color: hsl(217, 54%, 11%);
+        margin: auto;
+        padding: 0 1rem 1.5rem;
+        border-radius: 2.75rem;
+      }
+      #container {
+        width: 21rem;
+        background-color: hsl(216, 50%, 16%);
+        margin: auto;
+        border-radius: 0.625rem;
+      }
+      #NFT {
+        width: 19rem;
+        height: 19rem;
+        margin: 1rem 0 1rem 1rem;
+        border-radius: 0.625rem;
+      }
+      #transparent-container {
+        width: 19rem;
+        height: 19rem;
+        background-color: hsla(178, 100%, 50%, 0.5);
+        border-radius: 0.625rem;
+        position: absolute;
+        z-index: 2;
+        margin: 1rem 0 1rem 1rem;
+        opacity: 0%;
+      }
+      #transparent-container:hover {
+        background-color: hsla(178, 100%, 50%, alpha);
+        opacity: 100%;
+      }
+      #eye-icon {
+        margin: 8rem;
+      }
+      #title {
+        font-size: 1.25rem;
+        color: hsl(0, 0%, 100%);
+        margin-left: 1rem;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      #title:hover {
+        color: hsl(178, 100%, 50%);
+      }
+      #para {
+        font-size: 1.125rem;
+        color: hsl(215, 51%, 70%);
+        margin-left: 1rem;
+        font-weight: 300;
+      }
+      #crypto-icon {
+        margin-left: 1rem;
+      }
+      #crypto {
+        font-size: 1.125rem;
+        color: hsl(178, 100%, 50%);
+        margin-left: 0.5rem;
+        font-weight: 400;
+        display: inline-block;
+        position: relative;
+        bottom: 0.125rem;
+      }
+      #time-icon {
+        margin-left: 5rem;
+      }
+      #time {
+        font-size: 1.125rem;
+        color: hsl(215, 51%, 70%);
+        margin-left: 0.5rem;
+        font-weight: 300;
+        display: inline-block;
+        position: relative;
+        bottom: 0.125rem;
+      }
+      #line {
+        border: 0.0625rem solid hsl(215, 32%, 27%);
+        margin: 1rem;
+      }
+      #avatar {
+        width: 2.5rem;
+        border-radius: 50%;
+        margin-left: 1rem;
+        border: 0.0625rem solid hsl(0, 0%, 100%);
+      }
+      #credit {
+        font-size: 1.125rem;
+        color: hsl(215, 51%, 70%);
+        margin-left: 0.5rem;
+        font-weight: 300;
+        display: inline-block;
+        position: relative;
+        bottom: 0.75rem;
+      }
+      #name {
+        color: hsl(0, 0%, 100%);
+      }
+      #name:hover {
+        color: hsl(178, 100%, 50%);
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div id="outer-container">
+      <div id="middle-container">
+        <div id="container">
+          <div id="transparent-container">
+            <img id="eye-icon" src="./images/./icon-view.svg" alt="eye-icon" />
+          </div>
+          <img
+            id="NFT"
+            src="./images/./image-equilibrium.jpg"
+            alt="image-equilibrium"
+          />
+
+          <a id="title" href="">Equilibrium #3429</a>
+
+          <p id="para">Our Equilibrium collection promotes balance and calm.</p>
+          <img
+            id="crypto-icon"
+            src="./images/./icon-ethereum.svg"
+            alt="crypto-icon"
+          />
+          <p id="crypto">0.041 ETH</p>
+          <img id="time-icon" src="./images/./icon-clock.svg" alt="time-icon" />
+          <p id="time">3 days left</p>
+          <hr id="line" />
+          <img id="avatar" src="./images/./image-avatar.png" alt="guy-avatar" />
+          <p id="credit">Creation of <span id="name">Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">JigSaeb5655</a>.
+    </div>
+  </body>
+</html>
